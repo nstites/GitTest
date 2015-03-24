@@ -1,0 +1,61 @@
+\documentclass[11pt]{article}
+
+\begin{document}
+
+$$(x+1)$$
+$$3[2+(x+1)]$$
+$${a,b,c}$$
+$$\{a,b,c\}$$
+$$\$12.55$$
+
+$$3(\frac{2}{5})$$	%parantheses too short
+$$3\left(\frac{2}{5}\right)$$
+
+$$3\left[\frac{2}{5}\right]$$
+$$3\left\{\frac{2}{5}\right\}$$
+
+$$|x|$$
+$$|\frac{x}{x+1}|$$	%too short
+$$\left|\frac{x}{x+1}\right|$$
+
+If only want left bracket (system wants a "left-right" pair):
+$$\left\{x^2\right\}$$
+$$\left\{x^2\right.$$
+$$\left|\frac{dy}{dx} \right|_{x=1}$$	%spaces don't show in output
+$$\left.\frac{dy}{dx} \right|_{x=1}$$
+
+Tables:
+
+\begin{tabular}{|c|c|cccc|}	%C means center justified (# of c's = # columns)
+
+\hline
+$x$ & 1 & 2 & 3 & 4 & 5 \\
+$f(x)$ & 10 & 11 & 12 & 13 & 14 \\
+\\
+$x$ & 1 & 2 & 3 & 4 & 5 \\ \hline
+$f(x)$ & 10 & 11 & 12 & 13 & 14\\	\hline
+\end{tabular}
+
+Equation Array:
+\begin{eqnarray}
+5x^2=9*x+3 \\
+4x^2 = 12 \\
+x^3 = 3 \\
+x\approx\pm 1.732
+\end{eqnarray}
+
+\begin{eqnarray}
+5x^2&=&9*x+3 \\
+4x^2 &=& 12 \\
+x^3 &=& 3 \\
+x&\approx&\pm 1.732
+\end{eqnarray}
+
+\begin{eqnarray*}
+5x^2&=&9*x+3 \\
+4x^2 &=& 12 \\
+x^3 &=& 3 \\
+x&\approx&\pm 1.732
+\end{eqnarray*}
+
+\end{document}
